@@ -212,8 +212,8 @@ services:
  zabbix-web-apache-mysql:
   image: zabbix/zabbix-web-apache-mysql:ubuntu-5.0-latest
   ports:
-   - "80:8080"
-   - "443:8443"
+   - "8080:8080"
+   - "8443:8443"
   links:
    - mysql-server:mysql-server
    - zabbix-server:zabbix-server
